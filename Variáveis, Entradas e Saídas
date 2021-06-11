@@ -1,0 +1,212 @@
+# Questão 01
+## Enunciado:   
+#Faça um programa que mostre a mensagem "Olá, mundo!" na tela.
+
+print("Olá, mundo!")
+
+# *********************************************************************************************************
+
+# Questão 02
+## Enunciado:  
+# Faça um programa que peça um número e mostre a mensagem "O número informado foi [número]".
+
+numero = input('Por favor, inserir um número: ')
+print('O número informado foi', numero)
+
+# *********************************************************************************************************
+
+# Questão 03
+## Enunciado
+# Faça um programa que peça um número para o usuário (string), converta-o para float e depois imprima-o na tela. Você consegue fazer a mesma coisa, porém convertendo para int?
+
+numero = float(input('Por favor, inserir um número: '))
+print('O número informado foi', numero)
+print('O número informado foi', int(numero))
+
+# *********************************************************************************************************
+
+# Questão 04
+## Enunciado
+# Faça um programa que peça dois números inteiros e imprima a soma deles.
+
+a = int(input('Por favor, inserir o primeiro número inteiro: '))
+b = int(input('Por favor, inserir o segundo número inteiro: '))
+
+print('A soma dos dois números é', a+b)
+
+# *********************************************************************************************************
+
+# Questão 05
+## Enunciado
+# Faça um programa que peça as 4 notas bimestrais de um aluno e mostre a média aritmética delas.
+
+nota1 = float(input('Por favor, informe a primeira nota: '))
+nota2 = float(input('Por favor, informe a segunda nota: '))
+nota3 = float(input('Por favor, informe a terceira nota: '))
+nota4 = float(input('Por favor, informe a quarta nota: '))
+media = (nota1 + nota2 + nota3 + nota4) / 4
+
+print('A média do aluno é', media)
+
+# *********************************************************************************************************
+
+# Questão 06
+## Enunciado
+# Faça um programa que peça o raio de um círculo, calcule e mostre sua área.
+
+# Obs: Fórmula da área de um círculo: A = 3,14*(r**2), onde r é o raio.
+
+raio = float(input('Por favor, qual o valor do raio? '))
+area = 3.14 * (raio ** 2)
+print('O valor da área do círculo é', area)
+
+# *********************************************************************************************************# *********************************************************************************************************# *********************************************************************************************************
+
+# Questão 07
+## Enunciado
+# Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês e depois, 
+# calcule e mostre o total do seu salário no referido mês.
+
+valor_hora = float(input('Por favor, qual o valor da sua hora trabalhada? '))
+horas_trabalhadas = float(input('Por favor, qual número de horas trabalhadas? '))
+
+salario = valor_hora * horas_trabalhadas
+
+print('Total salário: R$ {}'.format(salario))
+
+# *********************************************************************************************************
+
+# Questão 08
+## Enunciado
+# Faça um programa que peça a temperatura em graus Fahrenheit (F), transforme e mostre a temperatura 
+# em graus Celsius (°C).
+
+# °C = (5 * (F-32) / 9)
+
+# Obs: Tente também fazer um programa que faça o inverso: peça a temperatura em graus Celsius e a 
+# transforme em graus Fahrenheit.
+
+# F --> C
+faren = float(input('Por favor, qual a temperatura em Fahrenheit? '))
+celcius = 5 * (faren - 32) / 9
+
+print('A temperatura de {:.2f}°F é igual a {:.2f}°C.'.format(faren, celcius))
+
+# C --> F
+celcius = float(input('Por favor, qual a temperatura em Celsius? '))
+faren = (9/5 * celcius) + 32
+
+print('A temperatura de {:.2f}°C é igual a {:.2f}°F.'.format(celcius, faren))
+
+# *********************************************************************************************************# *********************************************************************************************************# *********************************************************************************************************
+
+# Questão 09
+## Enunciado
+# Faça um programa que peça o dia, o mês e o ano para o usuário e imprima a data completa no 
+# formato dd/mm/aaaa.
+
+dia = input('Por favor, informe o dia: ')
+mes = input('Por favor, informe o mes: ')
+ano = input('Por favor, informe o ano: ')
+
+print('Data: {}/{}/{}'.format(dia, mes, ano))
+
+# *********************************************************************************************************
+
+# Questão 10
+## Enunciado
+# Faça um programa que peça 2 números inteiros e um número real, calcule e mostre:
+# a) o produto do dobro do primeiro com metade do segundo.
+# b) a soma do triplo do primeiro com o terceiro.
+# c) o terceiro elevado ao cubo.
+
+inteiro1 = int(input('Por favor, informe um número inteiro: '))
+inteiro2 = int(input('Por favor, informe outro número inteiro: '))
+real1 = float(input('Por favor, informe um número real: '))
+
+a = (2 * inteiro1) * (0.5 * inteiro2)
+b = (3 * inteiro1) + real1
+c = real1 ** 3
+
+print('\na) Produto do dobro do primeiro com metade do segundo é {:.2f}'.format(a))
+print('b) A soma do triplo do primeiro com o terceiro é {:.2f}'.format(b))
+print('c) O terceiro elevado ao cubo é {:.2f}'.format(c))
+
+# *********************************************************************************************************# *********************************************************************************************************# *********************************************************************************************************
+
+# Questão 11
+## Enunciado
+# Faça um programa que peça o peso e altura de uma pessoa e calcule seu IMC (Índice de Massa Corporal).
+
+# Obs: IMC = Peso/Altura**2
+
+peso = float(input('Por favor, qual o seu peso (em kg)? '))
+altura = float(input('Por favor, qual sua altura (ao invés de "," incluir ".")? '))
+
+imc = peso / (altura ** 2)
+
+print('Seu IMC é de {:.2f}'.format(imc))
+
+# *********************************************************************************************************
+
+# Questão 12
+## Enunciado
+# Faça um programa que peça um valor monetário e aumente-o em 15%. Seu programa deve imprimir a 
+# mensagem “O novo valor é [valor]”.
+
+valor = float(input('Por favor, qual o valor monetário a ser aumentado em 15%? '))
+
+print('O novo valor é {:.2f}'.format(valor * 1.15))
+
+# *********************************************************************************************************
+
+# Questão 13
+## Enunciado
+# Faça um programa que peça um valor monetário e diminua-o em 15%. Seu programa deve imprimir a 
+# mensagem “O novo valor é [valor]”.
+
+valor = float(input('Por favor, qual o valor monetário a ser dimunído em 15%? '))
+
+print('O novo valor é {:.2f}'.format(valor * 0.85))
+
+# *********************************************************************************************************
+
+# Questão 14
+## Enunciado
+# Desafio 1 - Peça para o usuário digitar uma velocidade inicial (em m/s), uma posição inicial (em m) 
+# e um instante de tempo (em s) e imprima a posição de um projétil nesse instante de tempo.
+
+# Use a fórmula matemática:
+# y(t) = y(0) + v(0)*t + (g*(t**2)/2)
+
+# Onde, g é a aceleração da gravidade (-10m/s²), y(t) é a posição final, y(0) é a posição inicial, 
+# v(0) é a velocidade inicial e t é o instante de tempo.
+
+# *** Nota minha *** : esta velocidade é a componente vertical!
+# Não vá confundir, caboclo!!!
+# Considerando que não há chão!!! Se tiver chão, faz um if posicao < 0!
+
+g = -10
+vel_inicial = float(input('Por favor, informe a componente vertical da \
+velocidade inicial (em m/s): '))
+pos_inicial = float(input('Por favor, informe a posição inicial (em m): '))
+tempo = float(input('Qual o instante que deseja saber (em s)? '))
+
+posicao = (pos_inicial) + (vel_inicial * tempo) + (g/2 * (tempo ** 2))
+
+print('No instante {} segundos, teremos o projétil na posição vertical {} metros.'.format(tempo, posicao))
+
+# *********************************************************************************************************
+# Questão #15
+## Enunciado
+# Desafio 2 - Faça um programa que informe a data e a hora para o usuário. 
+# Para isso use a função datetime.now() do módulo datetime.
+
+from datetime import datetime
+
+print('Data e horário neste instante:', datetime.now())
+
+# *********************************************************************************************************
+# *********************************************************************************************************# *********************************************************************************************************# *********************************************************************************************************
+# *********************************************************************************************************
+
